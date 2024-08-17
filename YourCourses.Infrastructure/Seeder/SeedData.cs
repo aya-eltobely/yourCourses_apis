@@ -29,6 +29,8 @@ namespace YourCourses.Infrastructure.Seeder
                 roleManager.CreateAsync(new IdentityRole(WebSiteRoles.SiteStudent)).GetAwaiter().GetResult();
             }
 
+            //aya
+
             //Create Admin
             userManager.CreateAsync(new ApplicationUser
             {
