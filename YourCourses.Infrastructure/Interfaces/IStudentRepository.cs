@@ -1,0 +1,16 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using YourCourses.Data.Models;
+
+namespace YourCourses.Infrastructure.Interfaces
+{
+    public interface IStudentRepository :IBaseRepository<Student>
+    {
+        List<ApplicationUser> GetAllUserStudent();
+        List<ApplicationUser> GetAllInactive();
+        bool Deactive(Student student);
+    }
+}
